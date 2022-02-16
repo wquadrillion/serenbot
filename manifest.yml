@@ -1,0 +1,56 @@
+display_information:
+  name: Bot
+  description: Initiate a conversation with the bot
+  background_color: '#0c3c58'
+features:
+  app_home:
+    home_tab_enabled: true
+    messages_tab_enabled: true
+    messages_tab_read_only_enabled: true
+  bot_user:
+    display_name: Bot
+    always_online: true
+  slash_commands:
+    - command: /bot
+      url:
+      description: Initiate a conversation with the bot
+      usage_hint: hello
+      should_escape: true
+oauth_config:
+  scopes:
+    user:
+      - channels:read
+      - groups:read
+      - im:history
+      - im:read
+      - users:read
+    bot:
+      - app_mentions:read
+      - channels:history
+      - channels:join
+      - channels:read
+      - chat:write
+      - chat:write.customize
+      - chat:write.public
+      - commands
+      - dnd:read
+      - groups:history
+      - im:read
+      - im:write
+      - mpim:history
+      - mpim:read
+      - mpim:write
+      - users.profile:read
+      - users:read
+      - channels:manage
+      - groups:read
+      - groups:write
+      - im:history
+      - incoming-webhook
+settings:
+  interactivity:
+    is_enabled: true
+    request_url:
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false

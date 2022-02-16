@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "An interactive slack bot",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "npm run build && node ./dist/index.js"
   },
   "author": "Olawale Quadrillion",
   "license": "MIT",
@@ -12,6 +13,13 @@
     "@slack/bolt": "^3.9.0",
     "axios": "^0.25.0",
     "dotenv": "^16.0.0",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-winston": "^4.2.0",
+    "fancy-log": "^2.0.0",
+    "fancylog": "^4.0.5",
+    "mongodb": "^4.3.1",
+    "winston": "^3.5.1"
   }
 }

@@ -1,11 +1,10 @@
-
 import dotenv from 'dotenv';
-
-import { apiSever, slackApp } from './servers';
-import { logger } from './helpers';
 import log from 'fancy-log';
 import { MongoClient } from 'mongodb';
+
+import { logger } from './helpers';
 import ResponsesDAO from './daos/responsesDAO';
+import { apiSever, slackApp } from './servers';
 
 dotenv.config();
 
